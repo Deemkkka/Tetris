@@ -13,22 +13,17 @@ namespace Tetris
             Console.SetWindowSize(40, 30);
             Console.SetBufferSize(40, 30);
 
-            int x1 = 2;
-            int y1 = 3;
-            char c1 = '*';
-
-            Draw(x1, y1, c1);
-
+            Point point1 = new Point();
+            point1.x = 2;
+            point1.y = 3;
+            point1.c = '*';
+            point1.Draw();
 
             //Relay
             Console.ReadKey();
         }
 
 
-        static void Draw(int x, int y, char c)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(c);
-        }
+        
     }
 }
