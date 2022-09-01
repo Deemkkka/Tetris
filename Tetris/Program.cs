@@ -10,12 +10,19 @@ namespace Tetris
     {
         static void Main(string[] args)
         {
+
+
             Console.SetWindowSize(40, 30);
             Console.SetBufferSize(40, 30);
 
-            Point point1 = new Point(2, 3, '*');
-            point1.Draw();
-            
+            Square s = new Square(2, 5, '*');
+            s.Draw();
+
+            Stick stick = new Stick(5, 10, '*');
+            stick.Draw();
+            //Point point1 = new Point(2, 3, '*');
+            //point1.Draw();
+
             Point p2 = new Point()
             {
                 x = 4,
